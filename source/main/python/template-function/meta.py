@@ -11,8 +11,8 @@ def mediator_meta(*metaclasses):
 	"""
 	Return a metaclass that acts as a mediator for multiple metaclasses.
 
-	EXAMPE
-	======
+	EXAMPLE
+	=======
 	----
 	>>> class Meta1(type):
 			def __new__(metacls, name, bases, kwargs):
