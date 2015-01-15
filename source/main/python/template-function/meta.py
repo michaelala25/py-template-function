@@ -210,10 +210,8 @@ class TemplateFunctionMeta(type):
 		# return it. If it is part of the __function__ dict, return
 		# that instead (class attributes have higher priorety however).
 		try:
-			print('here', key, cls.__dict__)
 			return cls.__dict__[key]
 		except KeyError:
-			print('uh oh', key)
 			try:
 				return cls.__function__.__dict__[key]
 			except KeyError:
